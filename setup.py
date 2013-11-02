@@ -1,6 +1,7 @@
 from __future__ import unicode_literals
 
 import re
+
 from setuptools import setup, find_packages
 
 
@@ -9,10 +10,11 @@ def get_version(filename):
     metadata = dict(re.findall("__([a-z]+)__ = '([^']+)'", content))
     return metadata['version']
 
+
 setup(
     name='Mopidy-Beets',
     version=get_version('mopidy_beets/__init__.py'),
-    url='http://github.com/dz0ny/mopidy-beets/',
+    url='https://github.com/mopidy/mopidy-beets',
     license='MIT',
     author='dz0ny',
     author_email='dz0ny@shortmail.com',
@@ -23,7 +25,8 @@ setup(
     include_package_data=True,
     install_requires=[
         'setuptools',
-        'Mopidy',
+        'Mopidy >= 0.14',
+        'Pykka >= 1.1',
         'requests',
     ],
     entry_points={

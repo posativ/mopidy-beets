@@ -1,6 +1,3 @@
-#!/usr/local/bin/python
-# -*- coding: utf-8 -*-
-#
 from __future__ import unicode_literals
 
 import logging
@@ -11,7 +8,7 @@ import urllib
 from requests.exceptions import RequestException
 from mopidy.models import Track, Album, Artist
 
-logger = logging.getLogger('mopidy.backends.beets.client')
+logger = logging.getLogger('mopidy_beets.client')
 
 
 class cache(object):
@@ -76,6 +73,8 @@ class BeetsRemoteClient(object):
 
     @cache()
     def get_item_by(self, name):
+        if isinstance(name, unicode):
+            name = name.encode('utf-8')
         res = self._get('/item/query/%s' %
                         urllib.quote(name)).get('results')
         try:
@@ -85,6 +84,8 @@ class BeetsRemoteClient(object):
 
     @cache()
     def get_album_by(self, name):
+        if isinstance(name, unicode):
+            name = name.encode('utf-8')
         res = self._get('/album/query/%s' %
                         urllib.quote(name)).get('results')
         try:

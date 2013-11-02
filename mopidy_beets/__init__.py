@@ -1,29 +1,12 @@
 from __future__ import unicode_literals
 
 import os
+
 from mopidy import ext, config
 from mopidy.exceptions import ExtensionError
 
 
-__doc__ = """A extension for playing music from Beets.
-
-This extension handles URIs starting with ``beets:`` and enables you,
-to play music from Beets web service.
-
-See https://github.com/dz0ny/mopidy-beets/ for further instructions on
-using this extension.
-
-**Issues:**
-
-https://github.com/dz0ny/mopidy-beets/issues
-
-**Dependencies:**
-
-requests
-
-"""
-
-__version__ = '1.0.2'
+__version__ = '1.0.3'
 
 
 class BeetsExtension(ext.Extension):
