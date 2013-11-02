@@ -1,3 +1,9 @@
+mopidy-beets (1.0.2-0mopidy2) unstable; urgency=low
+
+  * Add python-setuptools to Build-Depends.
+
+ -- Stein Magnus Jodal <stein.magnus@jodal.no>  Sat, 02 Nov 2013 21:28:07 +0100
+
 mopidy-beets (1.0.2-0mopidy1) unstable; urgency=low
 
   * Initial release
