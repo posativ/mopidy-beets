@@ -1,6 +1,7 @@
 mopidy-beets (1.0.3-0mopidy1) unstable; urgency=low
 
   * New upstream release.
+  * Set python_distutils as build system to avoid use of Makefile.
 
  -- Stein Magnus Jodal <stein.magnus@jodal.no>  Sat, 02 Nov 2013 23:20:57 +0100
 
