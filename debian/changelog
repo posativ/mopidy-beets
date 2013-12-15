@@ -1,3 +1,9 @@
+mopidy-beets (1.0.4-0mopidy1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stein Magnus Jodal <stein.magnus@jodal.no>  Sun, 15 Dec 2013 20:47:39 +0100
+
 mopidy-beets (1.0.3-0mopidy2) unstable; urgency=low
 
   * Switch from mopidy-beets.pydist to pydist-overrides for compatibility with
