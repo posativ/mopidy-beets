@@ -25,9 +25,9 @@ setup(
     include_package_data=True,
     install_requires=[
         'setuptools',
-        'Mopidy >= 0.14',
+        'Mopidy >= 0.17',
         'Pykka >= 1.1',
-        'requests',
+        'requests >= 1.0',
     ],
     entry_points={
         b'mopidy.ext': [
