@@ -3,11 +3,11 @@ Mopidy-Beets
 ************
 
 .. image:: https://pypip.in/v/Mopidy-Beets/badge.png
-    :target: https://crate.io/packages/Mopidy-Beets/
+    :target: https://pypi.python.org/pypi/Mopidy-Beets/
     :alt: Latest PyPI version
 
 .. image:: https://pypip.in/d/Mopidy-Beets/badge.png
-    :target: https://crate.io/packages/Mopidy-Beets/
+    :target: https://pypi.python.org/pypi/Mopidy-Beets/
     :alt: Number of PyPI downloads
 
 .. image:: https://travis-ci.org/mopidy/mopidy-beets.png?branch=master
@@ -62,6 +62,13 @@ Project resources
 
 Changelog
 =========
+
+v1.1.0 (2014-01-20)
+-------------------
+
+- Reuqire Requests >= 2.0.
+
+- Updated extension and backend APIs to match Mopidy 0.18.
 
 
 v1.0.4 (2013-12-15)
