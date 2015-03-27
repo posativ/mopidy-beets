@@ -2,19 +2,19 @@
 Mopidy-Beets
 ************
 
-.. image:: https://pypip.in/v/Mopidy-Beets/badge.png
+.. image:: https://img.shields.io/pypi/v/Mopidy-Beets.svg?style=flat
     :target: https://pypi.python.org/pypi/Mopidy-Beets/
     :alt: Latest PyPI version
 
-.. image:: https://pypip.in/d/Mopidy-Beets/badge.png
+.. image:: https://img.shields.io/pypi/dm/Mopidy-Beets.svg?style=flat
     :target: https://pypi.python.org/pypi/Mopidy-Beets/
     :alt: Number of PyPI downloads
 
-.. image:: https://travis-ci.org/mopidy/mopidy-beets.png?branch=master
+.. image:: https://img.shields.io/travis/mopidy/mopidy-beets/master.svg?style=flat
     :target: https://travis-ci.org/mopidy/mopidy-beets
     :alt: Travis CI build status
 
-.. image:: https://coveralls.io/repos/mopidy/mopidy-beets/badge.png?branch=master
+.. image:: https://img.shields.io/coveralls/mopidy/mopidy-beets/master.svg?style=flat
    :target: https://coveralls.io/r/mopidy/mopidy-beets?branch=master
    :alt: Test coverage
 
@@ -51,6 +51,14 @@ Configuration
 #. Searches in Mopidy will now return results from your Beets library.
 
 
+Usage
+=====
+
+#. Run ``beet web`` to start the Beets web interface.
+
+#. Start Mopidy, and search or browse your Beets library with any Mopidy client.
+
+
 Project resources
 =================
 
@@ -63,13 +71,21 @@ Project resources
 Changelog
 =========
 
+v2.0.0 (2015-03-25)
+-------------------
+
+- Require Mopidy >= 1.0.
+
+- Update to work with new playback API in Mopidy 1.0.
+
+- Update to work with new backend search API in Mopidy 1.0.
+
 v1.1.0 (2014-01-20)
 -------------------
 
-- Reuqire Requests >= 2.0.
+- Require Requests >= 2.0.
 
 - Updated extension and backend APIs to match Mopidy 0.18.
-
 
 v1.0.4 (2013-12-15)
 -------------------
@@ -81,7 +97,6 @@ v1.0.4 (2013-12-15)
 - Change search field ``track`` to ``track_name`` for compatibility with
   Mopidy 0.17. (Fixes: mopidy/mopidy#610)
 
-
 v1.0.3 (2013-11-02)
 -------------------
 
@@ -89,12 +104,10 @@ v1.0.3 (2013-11-02)
 
 - Rename logger to ``mopidy_beets``.
 
-
 v1.0.2 (2013-04-30)
 -------------------
 
 - Fix search.
-
 
 v1.0.1 (2013-04-28)
 -------------------

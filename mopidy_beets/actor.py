@@ -1,12 +1,14 @@
 from __future__ import unicode_literals
 
 import logging
-import pykka
 
 from mopidy import backend
 
-from .library import BeetsLibraryProvider
+import pykka
+
 from .client import BeetsRemoteClient
+from .library import BeetsLibraryProvider
+
 
 logger = logging.getLogger(__name__)
 
@@ -29,8 +31,8 @@ class BeetsBackend(pykka.ThreadingActor, backend.Backend):
 
 class BeetsPlaybackProvider(backend.PlaybackProvider):
 
-    def play(self, track):
-        id = track.uri.split(';')[1]
-        logger.info('Getting info for track %s with id %s' % (track.uri, id))
-        track = self.backend.beets_api.get_track(id, True)
-        return super(BeetsPlaybackProvider, self).play(track)
+    def translate_uri(self, uri):
+        track_id = uri.split(';')[1]
+        logger.debug('Getting info for track %s with id %s' % (uri, track_id))
+        track = self.backend.beets_api.get_track(track_id, True)
+        return track.uri
