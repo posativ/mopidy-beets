@@ -2,6 +2,7 @@ mopidy-beets (2.0.0-1) unstable; urgency=medium
 
   * New upstream release.
   * Update watch file.
+  * Bump Standards-Version to 3.9.6.
 
  -- Stein Magnus Jodal <stein.magnus@jodal.no>  Fri, 27 Mar 2015 13:12:46 +0100
 
