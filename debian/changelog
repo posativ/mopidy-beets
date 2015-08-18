@@ -4,6 +4,7 @@ mopidy-beets (2.0.0-2) unstable; urgency=medium
     pydist-overrides.
   * Build-Depend on debhelper 9.
   * Switch build system to pybuild.
+  * Run tests as part of build.
 
  -- Stein Magnus Jodal <stein.magnus@jodal.no>  Tue, 18 Aug 2015 13:59:44 +0200
 
