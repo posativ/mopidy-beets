@@ -2,18 +2,21 @@ Source: mopidy-beets
 Section: sound
 Priority: optional
 Maintainer: Stein Magnus Jodal <stein.magnus@jodal.no>
-Build-Depends: debhelper (>= 8.0.0), python (>= 2.7), python-setuptools
+Build-Depends: debhelper (>= 8.0.0),
+               mopidy (>= 1.0.8-2),
+               python (>= 2.7),
+               python-setuptools,
 Standards-Version: 3.9.6
 Homepage: http://www.mopidy.com/
 Vcs-Git: git://github.com/mopidy/mopidy-beets.git
 Vcs-Browser: https://github.com/mopidy/mopidy-beets
 X-Python-Version: >= 2.7
-X-Python3-Version: << 3
 
 Package: mopidy-beets
 Architecture: all
-Depends: ${misc:Depends}, ${python:Depends},
-Suggests: beets
+Depends: ${misc:Depends},
+         ${python:Depends},
+Suggests: beets,
 Description: Mopidy extension for playing music from Beets' web plugin
  Mopidy is a music server which can play music from multiple sources, like your
  local hard drive, radio streams, and from Spotify and SoundCloud.
