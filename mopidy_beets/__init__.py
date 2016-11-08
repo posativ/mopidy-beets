@@ -20,8 +20,7 @@ class BeetsExtension(ext.Extension):
 
     def get_config_schema(self):
         schema = super(BeetsExtension, self).get_config_schema()
-        schema['hostname'] = config.Hostname()
-        schema['port'] = config.Port()
+        schema['url'] = config.String()
         return schema
 
     def setup(self, registry):
